@@ -1,0 +1,128 @@
+body {
+	background-attachment: fixed;
+}
+
+#top {
+	width: 1350px;
+}
+
+#title {
+	float: right;
+	font-size: 150px;
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	margin-right: 30px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#word {
+	font-size: 75px;
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#music {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+#pressany {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#guesses {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 50px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#prior {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#usedlets {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#win {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 80px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#image {
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+}
+
+#scores {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#nextround {
+	color: black;
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+}
+
+#spacer {
+	height: 150px;
+}
+
+#losesound, #winsound, #megawin {
+	display: none;
+}
+
+/*fixes the pulsing win text from enlarging the screen */
+#winfix {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}

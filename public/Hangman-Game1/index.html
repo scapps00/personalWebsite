@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Sailor Moon Hangman</title>
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body background="assets/images/background.png">
+	<div id="top">
+	<img src="assets/images/usagi.png" alt="usagi">
+	<p id="title">Sailor<br>Moon<br>Hangman</p>
+	</div>
+	<br><br>
+	<p id="scores">Win: <span id="numwins">0</span> Lose: <span id="numlose">0</span></p>
+	<br>
+	<img src="assets/images/question.jpg" alt="image" id="image">
+	<div id="winfix"><p class="pulse" id="win"></p></div>
+	<p id="nextround" onclick="gamerestart()"></p>
+	<p id="word"></p>
+	<br>
+	<p id="prior">Letters you have used:</p>
+	<p id="usedlets"></p>
+	<p id="guesses"><span id="guessnum">15</span> guesses left</p>
+	<br>
+	<p id="pressany">Press any key to start guessing!</p>
+	<br><br><br>
+	<audio controls autoplay id="music">
+		<source src="assets/music/music.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="losesound">
+		<source src="assets/sounds/lose.wav" type="audio/wav">
+	</audio>
+	<audio id="winsound">
+		<source src="assets/sounds/win.wav" type="audio/wav">
+	</audio>
+	<audio id="megawin">
+		<source src="assets/sounds/megawin.mp3" type="audio/mp3">
+	</audio>
+	<div id="spacer"></div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

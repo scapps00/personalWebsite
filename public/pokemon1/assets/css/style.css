@@ -1,0 +1,100 @@
+#gamearea {
+	width: 700px;
+	height: 650px;
+	background-image: url("../images/seigaiha.png");
+}
+
+#enemystats {
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	font-family: 'Baloo', cursive;
+	font-size: 40px;
+}
+
+#enemyimgdiv {
+	float: right;
+}
+
+#enemyimg {
+	width: 300px;
+}
+
+#enemyhpbar {
+	border: 2px solid black;
+	height: 25px;
+	width: 250px;
+}
+
+#enemyhpbarfull {
+	background-color: red;
+	width: 100%;
+	height: 25px;
+}
+
+#heroimgdiv {
+	float: left;
+}
+
+#heroimg {
+	width: 300px;
+}
+
+#herostats {
+	float: right;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	font-family: 'Baloo', cursive;
+	font-size: 40px;
+}
+
+#herohpbar {
+	border: 2px solid black;
+	height: 25px;
+	width: 250px;
+}
+
+#herohpbarfull {
+	background-color: red;
+	width: 100%;
+	height: 25px;
+}
+
+#options {
+	padding-top: 15px;
+	padding-left: 15px;
+	font-family: 'Baloo', cursive;
+	font-size: 40px;
+	clear: both;
+	width: 681px;
+	height: 165px;
+	border: 2px solid black;
+	background-color: white;
+}
+
+#fight, #win {
+	display: none;
+}
+
+#herostatus, #herolvl, #enemystatus, #enemylvl {
+	font-size: 25px;
+}
+
+h1 {
+	font-family: 'Baloo', cursive;
+	font-size: 60px;
+	text-align: center;
+}
+
+.pickimg {
+	width: 150px;
+}
+
+.pokemonsounds {
+	display: none;
+}
+
+#pickimgcontainer {
+	display: block;
+	margin: auto;
+}

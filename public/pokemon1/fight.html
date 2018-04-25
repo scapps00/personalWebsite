@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta chatset="UTF-8">
+	<title>Pokemon BATTLE!</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div id="gamearea">
+	<div id="enemystats">
+		<p id="enemyname"></p>
+		<p><span id="enemylvl"></span>&nbsp;&nbsp;&nbsp;<span id="enemystatus"></span></p>
+		<div id="enemyhpbar"><p id="enemyhpbarfull"></p></div>
+		<p id="enemyhp"></p>
+	</div>
+	<div id="enemyimgdiv">
+		<img id="enemyimg" src="">
+	</div>
+	<div id="heroimgdiv">
+		<img id="heroimg" src="">
+	</div>
+	<div id="herostats">
+		<p id="heroname"></p>
+		<p><span id="herolvl"></span>&nbsp;&nbsp;&nbsp;<span id="herostatus"></span></p>
+		<p id="herostatus"></p>
+		<div id="herohpbar"><p id="herohpbarfull"></p></div>
+		<p id="herohp"></p>
+	</div>
+	<div id="options">
+		<ul>
+			<li id="opt0">FIGHT</li>
+			<li id="opt1">ITEM</li>
+			<li id="opt2">QUIT</li>
+			<li id="opt3"></li>
+		</ul>
+	</div>
+</div>
+<audio controls autoplay id="music">
+	<source src="assets/music/music.mp3" type="audio/mpeg">
+</audio>
+<audio id="fight">
+	<source src="assets/sounds/fight.wav" type="audio/wav">
+</audio>
+<audio id="win">
+	<source src="assets/sounds/megawin.mp3" type="audio/wav">
+</audio>
+</body>
+<script type="text/javascript" src="assets/js/game.js"></script>
+</html>
