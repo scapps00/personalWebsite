@@ -18,7 +18,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #me {
-    width: 350px;
+    width: 90%;
 }
 
 .bigAbout {
@@ -70,7 +70,11 @@ h5 {
     text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
+    #me {
+        width: 350px;
+    } 
+
     h1 {
         font-size: 100px;
     }
