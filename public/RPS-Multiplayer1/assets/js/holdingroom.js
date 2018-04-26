@@ -37,7 +37,7 @@ window.onunload = function() {
 //when there are two players registered in Firebase, game.html opens
 database.ref().on("value", function(snapshot) {
 	if (snapshot.val().playerInfo.numPlayers == "2") {
-		location.replace("game.html");
+		location.replace("/game");
 	}
 });
 });

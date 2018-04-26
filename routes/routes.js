@@ -42,6 +42,14 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + "/../public/RPS-Multiplayer1/index.html"));
     });
 
+    app.get("/holdingroom", function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/RPS-Multiplayer1/holdingroom.html"));
+    });
+
+    app.get("/game", function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/RPS-Multiplayer1/game.html"));
+    });
+
     app.get("/rpslskey", function(req, res) {
         res.send(process.env.rpskey);
     })

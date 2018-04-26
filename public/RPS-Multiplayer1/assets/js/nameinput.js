@@ -36,7 +36,7 @@ var config = {
 				name1: $("#name").val(),
 				numPlayers: "1"
 			});
-		location.replace("holdingroom.html");
+		location.replace("/holdingroom");
 		});
 	}
 	else if (snapshot.val().playerInfo.numPlayers == "1") {
@@ -49,7 +49,7 @@ var config = {
 				  name2: $("#name").val(),
 				  numPlayers: "2"
 			});
-			location.replace("game.html");
+			location.replace("/game");
 		});
 	} else if (snapshot.val().playerInfo.numPlayers == "2") {
 		$("#submit").on("click touchstart", function() {
