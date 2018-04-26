@@ -27,19 +27,19 @@ module.exports = function(app) {
     });
 
     app.get("/hangman", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/Hangman-Game/index.html"));
+        res.sendFile(path.join(__dirname + "/../public/Hangman-Game1/index.html"));
     });
 
     app.get("/trivia", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/week-4-game/index.html"));
+        res.sendFile(path.join(__dirname + "/../public/TriviaGame1/index.html"));
     });
 
     app.get("/pokemon", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/pokemon/index.html"));
+        res.sendFile(path.join(__dirname + "/../public/pokemon1/index.html"));
     });
 
     app.get("/rpsls", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/RPS-Multiplayer/index.html"));
+        res.sendFile(path.join(__dirname + "/../public/RPS-Multiplayer1/index.html"));
     });
 
     app.get("/rpslskey", function(req, res) {
