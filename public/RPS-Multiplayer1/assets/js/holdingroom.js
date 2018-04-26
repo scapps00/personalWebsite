@@ -25,12 +25,16 @@ var database = firebase.database();
 //when window closes, everything resets
 window.onunload = function() {
 	event.preventDefault();
-	database.ref("playerInfo").set({
-		name1: "nobody",
-		name2: "nobody",
-		score1: 0,
-		score2: 0,
-		numPlayers: "0"
+	database.ref().on("value", function(snapshot) {
+		if (snapshot.val().playerInfo.numPlayers !== "2") {
+			database.ref("playerInfo").set({
+				name1: "nobody",
+				name2: "nobody",
+				score1: 0,
+				score2: 0,
+				numPlayers: "0"
+			});
+		}
 	});
 }
 
