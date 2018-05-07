@@ -51,6 +51,8 @@ module.exports = function(app) {
     });
 
     app.get("/rpslskey", function(req, res) {
-        res.send(process.env.rpskey);
-    })
+        if (req.xhr === true && req.hostname === "samanthacapps.com") {
+            res.send(process.env.rpskey);
+        }
+    });
 };
