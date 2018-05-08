@@ -51,10 +51,6 @@ module.exports = function(app) {
     });
 
     app.get("/rpslskey", function(req, res) {
-        if (req.xhr === true && req.hostname === "samanthacapps.com") {
-            res.send(process.env.rpskey);
-        } else {
-            res.send("ACCESS DENIED!");
-        }
+        res.send(process.env.rpskey);
     });
 };
