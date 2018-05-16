@@ -1,26 +1,17 @@
 //initializes Firebase
 $(document).ready(function() {
-	var rpslskey = "";
-
-	//gets Firebase database key
-	$.ajax({
-		method: "GET",
-		url: "../rpslskey"
-	}).done(function(result) {
-		rpslskey = result;
-	});
 
 var config = {
-	apiKey: rpslskey,
+	apiKey: "AIzaSyBl08B4TCLkqZuE_tzpEs-qjs7Vn69U6-k",
 	authDomain: "rpsgame-5f63e.firebaseapp.com",
 	databaseURL: "https://rpsgame-5f63e.firebaseio.com",
 	storageBucket: "rpsgame-5f63e.appspot.com",
 	messagingSenderId: "603451137166"
-	};
+};
 
-	firebase.initializeApp(config);
+firebase.initializeApp(config);
 	
-	var database = firebase.database();
+var database = firebase.database();
 
  //if there is not another player registered, holdingroom.html room opens
  //if there is, game.html opens
