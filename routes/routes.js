@@ -53,4 +53,8 @@ module.exports = function(app) {
     app.get("/ria", function(req, res) {
         res.sendFile(path.join(__dirname + "/../public/Ria/index.html"));
     });
+
+    app.get("/pta", function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/PTA/index.html"));
+    });
 };
