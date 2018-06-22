@@ -57,4 +57,8 @@ module.exports = function(app) {
     app.get("/pta", function(req, res) {
         res.sendFile(path.join(__dirname + "/../public/PTA/index.html"));
     });
+
+    app.get("/pta-mob", function(req, res) {
+        res.sendFile(path.join(__dirname + "/../public/PTA/index-mob.html"));
+    });
 };
