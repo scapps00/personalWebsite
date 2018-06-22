@@ -69,8 +69,8 @@ function eye2Pos() {
 function setEyes() {
     $("#laser1").css("display", "none");
     $("#laser2").css("display", "none");
-    $("#eye1").attr("src", "assets/images/eye.png");
-    $("#eye2").attr("src", "assets/images/eye.png");
+    $("#eye1").attr("src", "Ria/assets/images/eye.png");
+    $("#eye2").attr("src", "Ria/assets/images/eye.png");
     $(document).on("mousemove", function(event) {
         $("#eye1").css("top", calcY1(event.pageX, event.pageY, eye1Pos()) + "px");
         $("#eye1").css("left", calcX1(event.pageX, event.pageY, eye1Pos()) + "px");

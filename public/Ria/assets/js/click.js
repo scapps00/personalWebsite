@@ -1,8 +1,8 @@
 $(".links").click(function(event) {
     event.preventDefault();
     document.getElementById("meow").play();
-    $("#eye1").attr("src", "assets/images/eyeRed.png");
-    $("#eye2").attr("src", "assets/images/eyeRed.png");
+    $("#eye1").attr("src", "Ria/assets/images/eyeRed.png");
+    $("#eye2").attr("src", "Ria/assets/images/eyeRed.png");
     $(document).unbind();
     $("#laser1").css("display", "inline");
     $("#laser2").css("display", "inline");
