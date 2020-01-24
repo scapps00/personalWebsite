@@ -95,8 +95,6 @@ h5 {
 
     /*transition provided by Hover.css http://ianlunn.github.io/Hover/ */
     .hvr-rotate {
-        display: inline-block;
-        vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px transparent;
@@ -111,8 +109,6 @@ h5 {
     }
 
     .hvr-underline-from-center {
-        display: inline-block;
-        vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px transparent;
